@@ -1,6 +1,19 @@
 // template_uq16k42
-// service_i34tg3r   
+// service_i34tg3r   git 
 // l5DuSQ5dzzggBMbnT
+
+let contrastToggle = false;
+function toggleContrast() {
+    contrastToggle = !contrastToggle;
+    if (contrastToggle) {
+        document.body.classList += " dark-theme"
+    }
+    else {
+        document.body.classList.remove("dark-theme")
+    }
+}
+
+
 
 function contact(event) {
     event.preventDefault();
