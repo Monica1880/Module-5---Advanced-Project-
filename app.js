@@ -6,7 +6,7 @@ function contact(event) {
     event.preventDefault();
     const loading = document.querySelector('.modal__overlay--loading');
     const success = document.querySelector('.modal__overlay--success');
-    loading.classlist += " modal__overlay--visible";
+    loading.classList += " modal__overlay--visible";
     emailjs
         .sendForm(
             'service_i34tg3r',
@@ -27,7 +27,14 @@ function contact(event) {
 // ^^ This is a Promise. 
 // I have it all hooked up to EmailJS.
 
+
+let isModalOpen = false;
 function toggleModal() {
-    
+    if (isModalOpen) {
+        isModalOpen = false;
+        return document.body.classList.remove("modal--open");
+    }
+    isModalOpen = true;
+    document.body.classList += " modal--open";
 }
 
