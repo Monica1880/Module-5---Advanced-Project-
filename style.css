@@ -143,17 +143,28 @@ nav,
     transition: all 400ms 200ms;
 }
 
-.dark-theme .title,
-.dark-theme .section__title,
-.dark-theme .section__sub-title,
-.dark-theme .nav__link--anchor,
-.dark-theme .fa-solid.fa-circle-half-stroke,
-.dark-theme .header__para,
- {
+
+.dark-theme .section__title {
     color: white;
 }
 
-.dark-theme {
+.dark-theme .nav__link--anchor {
+    color: white;
+}
+
+.dark-theme .header__para {
+    color: white;
+}
+
+.dark-theme .title {
+    color: white;
+}
+
+.dark-theme .title.purple {
+    color: purple;
+}
+
+.dark-theme section {
     background-color: #242424;
 }
 
@@ -165,9 +176,11 @@ nav,
     border-color: white;
 }
 
-.dark-theme .scroll__icon:after,
-.dark-theme .link__hover-effect--black:after 
-{
+.dark-theme .scroll__icon:after {
+    background-color: white;
+}
+
+.dark-theme .link__hover-effect--black:after {
     background-color: white;
 }
 
@@ -179,6 +192,8 @@ nav,
     background-color: white;
     color: #242424;
 }
+
+
 
 
 /* 
